@@ -1,0 +1,9 @@
+{
+  "extends": "@pg/typescript-config/nestjs.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "incremental": true
+  },
+  "include": ["src", "test"]
+}

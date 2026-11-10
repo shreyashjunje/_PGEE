@@ -1,0 +1,36 @@
+{
+  "name": "pg-management",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write .",
+    "db:migrate": "pnpm --filter @pg/database db:migrate",
+    "db:seed": "pnpm --filter @pg/database db:seed",
+    "db:studio": "pnpm --filter @pg/database db:studio",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
+    "turbo": "^2.11.10",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "{apps,packages}/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,mjs,json,md,yml,yaml,css}": "prettier --write"
+  }
+}

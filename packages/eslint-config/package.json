@@ -1,0 +1,24 @@
+{
+  "name": "@pg/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./base": "./base.js",
+    "./nest": "./nest.js",
+    "./next": "./next.js"
+  },
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint-config-next": "^16.4.6",
+    "eslint-config-prettier": "^10.1.8",
+    "typescript-eslint": "^8.72.2"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "typescript": "^6.0.0"
+  }
+}

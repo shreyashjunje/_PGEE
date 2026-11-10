@@ -1,0 +1,12 @@
+.git
+.husky
+.turbo
+**/.turbo
+**/node_modules
+**/dist
+**/.next
+**/coverage
+packages/database/src/generated
+.env
+.env.*
+!.env.example
